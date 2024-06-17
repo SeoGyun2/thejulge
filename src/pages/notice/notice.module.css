@@ -1,0 +1,199 @@
+/* notice.module.css */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.topFrame, .bottomFrame {
+  width: 80%;
+  margin: auto;
+}
+
+.filtersContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.filterButton {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute; 
+  left: 60%
+  
+}
+
+.dfilterButton {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #FF8D72;
+  color: white;
+  position: absolute;
+  left: 64.5%;
+  
+}
+
+.filterButton:hover {
+  background-color: gray;
+}
+
+.dilterButton:hover {
+  background-color: gray;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topFrame {
+  background-color: #FFEBE7;
+  width: 100%;
+  padding: 40px 238px 0 238px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 500px;
+}
+
+.bottomFrame {
+  background-color: white;
+  width: 100%;
+  padding: 40px 238px 40px 238px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.topTitle,
+.bottomTitle {
+  position: absolute; 
+  top: 40px; 
+  left: 33%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 60px; 
+}
+
+.cardContainer + .cardContainer {
+  margin-top: 30px; 
+}
+
+
+.container2 {
+  background-color: white;
+  width: 100vw;
+  height: 995px;
+  paddng: 60px 238px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  width: 313px;
+  height: 349px;
+  border: 1px solid #ccc;
+  padding: 16px 0 0 0;
+}
+
+.cardImage {
+  width: 280px;
+  height: 160px;
+  border-radius: 12px 12px;
+  gap: 0px;
+  margin: auto;
+  display: block;
+
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardTitle {
+  weight: 700px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  Line-height: 25px;
+}
+
+.cardDate {
+  width: 236px;
+  height: 22px;
+  color: #7D7986;
+  margin-bottom: 6px;
+  weight: 400px;
+  font-size: 14px;
+  Line-height: 22px;
+}
+
+.cardLocation {
+  font-size: 14px;
+  color: #7D7986;
+  width: 107px;
+  height: 22px;
+  margin-bottom: 6px;
+  Line-height: 22px;
+}
+
+.cardPrice {  
+  weight: 700px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  Line-height: 60.05px
+}
+
+.discountText{
+  background-color: #FFAF9B;
+  color: white;
+  
+  width: 159px;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  left: 202px;
+  height: 38px;
+  
+ 
+}
+
+.discount {
+  
+  color: #ff6b6b;
+  left: 16px;
+}

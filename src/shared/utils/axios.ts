@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const apiInstance = axios.create({
-  baseURL: 'https://bootcamp-api.codeit.kr/api/5-6/the-julge',
+  baseURL: 'https://bootcamp-api.codeit.kr/api/5-11/the-julge',
 });
 
 apiInstance.interceptors.request.use(configOrigin => {
