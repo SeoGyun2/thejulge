@@ -1,4 +1,3 @@
 {
-  "extends": ["airbnb"],
-  "react/jsx-filename-extension": true
+  "extends": ["airbnb"]  
 }
