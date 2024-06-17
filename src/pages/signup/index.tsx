@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { SignupForm } from '@/widgets/signup';
 import { Logo, PageLayout } from '@/components/auth';
 
-import * as S from './index.styled';
+import * as S from '@/styles/signup.styled';
 
 const index = () => (
   <PageLayout>
