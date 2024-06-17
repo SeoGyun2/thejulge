@@ -7,7 +7,7 @@ interface CardProps {
   cardDate: string;
   cardLocation: string;
   cardPrice: string;
-  discountText: string;  
+  discountText?: string;  
 }
 
 const Card = ({cardImage, cardTitle, cardDate, cardLocation, cardPrice, discountText}: CardProps) => {
@@ -26,7 +26,7 @@ const Card = ({cardImage, cardTitle, cardDate, cardLocation, cardPrice, discount
               <img src="/ping.svg" alt="ping" className={styles.ping} /> {cardLocation}</p>
             <div className={styles.cardPrice}>
               <span>{cardPrice}원</span>
-              <span className={styles.discountText}>{discountText}<img src="/upkeyboard.svg" alt="up" className={styles.upkeyboard} /> </span>
+              {discountText&&<span className={styles.discountText}>{discountText}<img src="/upkeyboard.svg" alt="up" className={styles.upkeyboard} /> </span>}
             </div>
           </div>
         </div>        
