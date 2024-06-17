@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SignupForm } from '@/widgets/signup';
+import { SignupForm } from '@/widgets/signup/ui/signupForm/SignupForm';
 import { Logo, PageLayout } from '@/components/auth';
 
 import * as S from '@/styles/signup.styled';
