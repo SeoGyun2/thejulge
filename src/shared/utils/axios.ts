@@ -4,7 +4,7 @@ export const apiInstance = axios.create({
   baseURL: 'https://bootcamp-api.codeit.kr/api/5-11/the-julge',
 });
 
-apiInstance.interceptors.request.use(configOrigin => {
+apiInstance.interceptors.request.use((configOrigin) => {
   const config = configOrigin;
   if (typeof window !== 'undefined') {
     const cookies = document.cookie;

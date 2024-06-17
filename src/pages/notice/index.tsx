@@ -69,7 +69,7 @@ const notices2 = [
     cardTitle: '정원식당',
     cardDate: '2023-01-02 15:00-18:00 (3시간)',
     cardLocation: '서울시 송파구',
-    cardPrice: '10,000',    
+    cardPrice: '10,000',
   },
   {
     cardImage: '/our.png',
@@ -78,37 +78,37 @@ const notices2 = [
     cardLocation: '서울시 마포구',
     cardPrice: '9,500',
     discountText: '기존 시급보다 10%',
-  }
+  },
 ];
 
-const NoticePage = () => {
+function NoticePage() {
   return (
     <>
-    <Header />
-    <div className={styles.mainContainer}>
-      <div className={styles.topFrame}>
-        <h1 className={styles.topTitle}>맞춤 공고</h1>
-        <div className={styles.cardContainer}>
-          {notices1.slice(0, 3).map((notice, index) => (
-            <Card
-              key={index}
-              cardImage={notice.cardImage}
-              cardTitle={notice.cardTitle}
-              cardDate={notice.cardDate}
-              cardLocation={notice.cardLocation}
-              cardPrice={notice.cardPrice}
-              discountText={notice.discountText}
-            />
-          ))}
+      <Header />
+      <div className={styles.mainContainer}>
+        <div className={styles.topFrame}>
+          <h1 className={styles.topTitle}>맞춤 공고</h1>
+          <div className={styles.cardContainer}>
+            {notices1.slice(0, 3).map((notice, index) => (
+              <Card
+                key={index}
+                cardImage={notice.cardImage}
+                cardTitle={notice.cardTitle}
+                cardDate={notice.cardDate}
+                cardLocation={notice.cardLocation}
+                cardPrice={notice.cardPrice}
+                discountText={notice.discountText}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-     
+
         <div className={styles.bottomFrame}>
           <h1 className={styles.bottomTitle}>전체 공고</h1>
           <div className={styles.filtersContainer}>
-          <button className={styles.filterButton}>마감임박순</button>
-          <button className={styles.dfilterButton}>상세 필터</button>
-        </div>
+            <button className={styles.filterButton}>마감임박순</button>
+            <button className={styles.dfilterButton}>상세 필터</button>
+          </div>
           <div className={styles.cardContainer}>
             {notices2.slice(0, 3).map((notice, index) => (
               <Card
@@ -138,8 +138,8 @@ const NoticePage = () => {
         </div>
       </div>
       <Footer />
-    </> 
+    </>
   );
-};
+}
 
 export default NoticePage;

@@ -10,7 +10,9 @@ export const useSignupState = () => {
     formState: { errors },
   } = useForm({
     mode: 'all',
-    defaultValues: { email: '', password: '', confirmPassword: '', type: '' },
+    defaultValues: {
+      email: '', password: '', confirmPassword: '', type: '',
+    },
   });
 
   const passwordValue = watch(SignupFormState.password);
@@ -38,8 +40,7 @@ export const useSignupState = () => {
   const confirmPasswordValidation = {
     ...register(SignupFormState.confirmPassword, {
       required: { value: true, message: '비밀번호를 다시 입력해주세요.' },
-      validate: value =>
-        value === passwordValue || '비밀번호가 일치하지 않습니다.',
+      validate: (value) => value === passwordValue || '비밀번호가 일치하지 않습니다.',
     }),
   };
 

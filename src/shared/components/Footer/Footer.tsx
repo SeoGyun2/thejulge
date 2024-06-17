@@ -1,11 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
 import * as S from './Footer.styled';
 import envelopeImg from '@/assets/envelope-square.svg';
 import facebookImg from '@/assets/facebook-square.svg';
 import instaImg from '@/assets/instagram.svg';
-import Image from 'next/image';
 
-const Footer = () => {
+function Footer() {
   return (
     <S.FooterWrap>
       <S.FooterContainer>
@@ -44,6 +44,6 @@ const Footer = () => {
       </S.FooterContainer>
     </S.FooterWrap>
   );
-};
+}
 
 export default Footer;

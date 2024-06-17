@@ -1,5 +1,5 @@
-import theme from '@/styles/theme';
 import styled from 'styled-components';
+import theme from '@/styles/theme';
 import a from '../../../../../public/checkIcon.svg';
 
 export const SelectContainer = styled.div`

@@ -1,5 +1,5 @@
-import theme from '@/styles/theme';
 import styled from 'styled-components';
+import theme from '@/styles/theme';
 import searchIco from '../../../../../public/search.svg';
 
 export const InputContainer = styled.div`
